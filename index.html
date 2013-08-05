@@ -71,6 +71,14 @@
             line-height: 24px;
         }
 
+        p.disc {
+            padding-top: 0%;
+            font-size: 12px;
+            line-height: 0px;
+            font-style: italic;
+            color: #cccccc;
+        }
+
             /* Video pitch and Action */
         .pitch {
             padding: 2.5% 0%;
@@ -116,6 +124,7 @@
         .footer a {
             color: #ccccff;
         }
+
         .ftc {
             color: #ff8899;
         }
@@ -159,83 +168,92 @@
         <div class="span12">
             <!-- Special typography from Bootstrap for lead paragraph. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-            <p class="lead">Education is the birthright of every child. And we would like to play our part.Would be great if you could lend a helping hand!!</p>
-
+            <p class="lead">Education is the birthright of every child. And we would like to play our part.Would be
+                great if you could lend a helping hand!!</p>
+            <p class="disc">Site still under construction</p>
         </div>
     </div>
-
     <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-            <img class="img-polaroid" src="http://i.imgur.com/xBkkVbe.gif">
+            <img class="img-polaroid" alt="Placeholder" src="http://i.imgur.com/xBkkVbe.gif">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
-            <div class="row-fluid footer">Example Data</div>
-            <div class="span8 offset2">
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <div class="row-fluid statistics">
+                        <div class="span4">
+                            <!-- linediv-l and linediv-r give dividing lines that look
+                            different in horizontal and vertical layouts, illustrating
+                            media queries. -->
+                            <div class="linediv-l">
+                                <h3>25</h3>
 
-                <div class="statistics">
+                                <p>backers</p>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="linediv-c">
+                                <h3>$350</h3>
 
-                    <div class="span4">
-                        <!-- linediv-l and linediv-r give dividing lines that look
-                        different in horizontal and vertical layouts, illustrating
-                        media queries. -->
-                        <div class="linediv-l">
-                            <h3>25</h3>
+                                <p>of $1030</p>
+                            </div>
+                        </div>
+                        <div class="span4">
+                            <div class="linediv-r">
+                                <h3>40</h3>
 
-                            <p>backers</p>
+                                <p>days left</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="span4">
-                        <div class="linediv-c">
-                            <h3>$350</h3>
-
-                            <p>of $1030</p>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="linediv-r">
-                            <h3>40</h3>
-
-                            <p>days left</p>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-            <div class="span10 offset1">
-                <!-- Bootstrap progress bar -->
-                <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-                <div class="thermometer progress active">
-                    <div class="bar bar-success" style="width: 60%;"></div>
-                    <div class="bar bar-warning" style="width: 40%;"></div>
+                <div class="row-fluid">
+                    <div class="span10 offset1">
+                        <!-- Bootstrap progress bar -->
+                        <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+                        <div class="thermometer progress active">
+                            <div class="bar bar-success" style="width: 60%;"></div>
+                            <div class="bar bar-warning" style="width: 40%;"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="span6 offset3 order">
-                <!-- Standard Bootstrap button. -->
-                <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-                <button class="btn btn-success btn-large">Preorder</button>
-            </div>
-            <div class="span8 offset2 social">
-                <!-- Social buttons are not included in default Bootstrap. -->
-                <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-                <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-                <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+                <div class="row-fluid">
+                    <div class="span6 offset3 order">
+                        <!-- Standard Bootstrap button. -->
+                        <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+                        <button class="btn btn-success btn-large">Preorder</button>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span8 offset2 social">
+                        <!-- Social buttons are not included in default Bootstrap. -->
+                        <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+                        <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+                        <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-            <img class="img-polaroid" src="http://i.istockimg.com/file_thumbview_approve/15382804/2/stock-photo-15382804-indian-schoolgirls.jpg">
+            <img class="img-polaroid" alt="Placeholder"
+                 src="http://i.istockimg.com/file_thumbview_approve/15382804/2/stock-photo-15382804-indian-schoolgirls.jpg">
         </div>
         <div class="span5 copy">
             <p>
-                Product Description: The right to education is a universal entitlement to education, recognized in the International Covenant on Economic, Social
-                and Cultural Rights as a human right that includes the right to free, compulsory primary education for all, an obligation to
-                develop secondary education accessible to all, in particular by the progressive introduction of free secondary education,
-                as well as an obligation to develop equitable access to higher education, ideally by the progressive introduction of free
-                higher education. In addition to these access to education provisions, the right to education encompasses the obligation to rule out discrimination at all levels of the educational system,
+                Product Description: The right to education is a universal entitlement to education, recognized in the
+                International Covenant on Economic, Social
+                and Cultural Rights as a human right that includes the right to free, compulsory primary education for
+                all, an obligation to
+                develop secondary education accessible to all, in particular by the progressive introduction of free
+                secondary education,
+                as well as an obligation to develop equitable access to higher education, ideally by the progressive
+                introduction of free
+                higher education. In addition to these access to education provisions, the right to education
+                encompasses the obligation to rule out discrimination at all levels of the educational system,
                 to set minimum standards and to improve quality of education.
             </p>
         </div>
@@ -243,15 +261,18 @@
     <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
             <p>
-                At <span class="ftc">fTC</span>, Product - Decsription: we inspire to provide that free education online to everyone who wants to learn. And to ensure that no
-                single skill insisted, the medium of instruction would be in any vernacular language of the child's liking.
-                Also, we would be providing classes for the various state boards of India, including Karnataka, Andhra Pradesh, Tamil Nadu and Kerla.
+                At <span class="ftc">fTC</span>, Product - Decsription: we inspire to provide that free education online
+                to everyone who wants to learn. And to ensure that no
+                single skill insisted, the medium of instruction would be in any vernacular language of the child's
+                liking.
+                Also, we would be providing classes for the various state boards of India, including Karnataka, Andhra
+                Pradesh, Tamil Nadu and Kerla.
                 Your support is critical and important to us. We love you!
 
             </p>
         </div>
         <div class="span5 asset">
-            <img class="img-polaroid" src="http://i.imgur.com/bt5JEhm.jpg">
+            <img class="img-polaroid" alt="Placeholder" src="http://i.imgur.com/bt5JEhm.jpg">
         </div>
     </div>
 
@@ -269,7 +290,8 @@
                     </div>
                     <div id="collapseOne" class="accordion-body collapse">
                         <div class="accordion-inner">
-                            At <span class="ftc">fTC</span>, Your contribution would be used to prepare the tutoring material.
+                            At <span class="ftc">fTC</span>, Your contribution would be used to prepare the tutoring
+                            material.
                         </div>
                     </div>
                 </div>
@@ -280,14 +302,14 @@
                             What is the easiest way to contribute?
                         </a>
                     </div>
-                    <div iD="collapseTwo" class="accordion-body collapse">
+                    <div id="collapseTwo" class="accordion-body collapse">
                         <div class="accordion-inner">
                             You could pay by MasterCard, Visa or Paypal.
                         </div>
-                    </Div>
-                </Div>
-            </Div>
-        </Div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -295,12 +317,13 @@
     <!-- http://creativecommons.org/licenses/ -->
     <div class="row-fluid footer">
         <div class="span12">
-            <p> This is a project done as a part of <a href="https://class.coursera.org/startup-001/class/index">This Course
+            <p> This is a project done as a part of <a href="https://class.coursera.org/startup-001/class/index">This
+                Course
 
-                </a>And has no commercial value. Any copyright violations are purely accidental, and will be reverted as soon as they are brought to notice.</p>
+            </a>And has no commercial value. Any copyright violations are purely accidental, and will be reverted as
+                soon as they are brought to notice.</p>
         </div>
     </div>
-
 </div>
 </body>
 </html>
