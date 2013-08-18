@@ -9,6 +9,8 @@ module.exports = function(sequelize, DataTypes) {
   return sequelize.define("Order", {
     coinbase_id: {type: DataTypes.STRING, unique: true, allowNull: false},
     amount: {type: DataTypes.FLOAT},
-    time: {type: DataTypes.STRING, allowNull: false}
+    time: {type: DataTypes.STRING, allowNull: false},
+    native_amount: {type: DataTypes.FLOAT},
+    native_currency: {type: DataTypes.STRING, allowNull: true}
   });
 };
