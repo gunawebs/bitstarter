@@ -23,7 +23,7 @@ app.get('/orders', function(request, response) {
   global.db.Order.findAll().success(function(orders) {
     var orders_json = [];
     orders.forEach(function(order) {
-      orders_json.push({id: order.coinbase_id, amount: order.amount, time: order.time});
+      orders_json.push({id: order.coinbase_id, amount: order.amount, time: order.time,native_amount: order.native_amount, native_currency: order.native_currency});
     });
     // Uses views/orders.ejs
     response.render("orders", {orders: orders_json});
