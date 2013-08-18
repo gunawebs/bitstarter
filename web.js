@@ -41,7 +41,8 @@ app.get('/refresh_orders', function(request, response) {
     res.on('end', function() {
       try {
         var orders_json = JSON.parse(body);
-        console.log("json received\n:"+orders_json+"\n****");
+
+        console.log("json received\n:"+JSON.stringify(orders_json)+"\n****");
         if (orders_json.error) {
           response.send(orders_json.error);
           return;
