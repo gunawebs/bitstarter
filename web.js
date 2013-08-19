@@ -23,6 +23,23 @@ app.get('/home', function(request, response) {
     response.send(data);
 });
 
+
+app.get('/css/ftstyle.css', function(request, response) {
+    var data = fs.readFileSync('/css/ftstyle.css').toString();
+    response.send(data);
+});
+
+app.get('/script/ftscript.js', function(request, response) {
+    var data = fs.readFileSync('/script/ftscript.js').toString();
+    response.send(data);
+});
+
+app.get('/home', function(request, response) {
+    var data = fs.readFileSync('index.html').toString();
+    response.send(data);
+});
+
+
 // Render example.com/orders
 app.get('/orders', function(request, response) {
   global.db.Order.findAll().success(function(orders) {
