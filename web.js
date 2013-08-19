@@ -12,6 +12,9 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 8080);
 
+app.use(express.static(__dirname + '/static'));
+
+
 // Render homepage (note trailing slash): example.com/
 app.get('/', function(request, response) {
   var data = fs.readFileSync('index.html').toString();
@@ -24,15 +27,6 @@ app.get('/home', function(request, response) {
 });
 
 
-app.get('/css/ftstyle.css', function(request, response) {
-    var data = fs.readFileSync('/css/ftstyle.css').toString();
-    response.send(data);
-});
-
-app.get('/script/ftscript.js', function(request, response) {
-    var data = fs.readFileSync('/script/ftscript.js').toString();
-    response.send(data);
-});
 
 app.get('/home', function(request, response) {
     var data = fs.readFileSync('index.html').toString();
